@@ -50,7 +50,7 @@ class KioskWindow(QMainWindow):
 
         # Retry if offline
         self.reconnect_timer = QTimer(self)
-        self.reconnect_timer.setInterval(30000)  # 30 seconds
+        self.reconnect_timer.setInterval(1000) #  Set time based on the user
         self.reconnect_timer.timeout.connect(self.retry_online)
 
     def handle_load_result(self, ok: bool):
