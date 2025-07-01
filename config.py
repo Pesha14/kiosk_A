@@ -1,6 +1,6 @@
 URLS = [
     "https://charming-valkyrie-c973ce.netlify.app/",   # Screen 1
-    "https://dashboard.example.com"        # Screen 2 
+    "https://github.com/dashboard"        # Screen 2 
 ]
 
 
