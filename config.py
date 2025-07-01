@@ -1,8 +1,10 @@
+# URLs to load on each screen
 URLS = [
-    "https://charming-valkyrie-c973ce.netlify.app/",   # Screen 1
-    "https://github.com/dashboard"        # Screen 2 
+    "https://charming-valkyrie-c973ce.netlify.app/",  # Screen 1
+    "https://github.com/dashboard"                    # Screen 2
 ]
 
+DEV_MODE = True 
 
 KIOSK_OPTIONS = {
     "fullscreen": True,
