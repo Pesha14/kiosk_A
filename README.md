@@ -1,7 +1,9 @@
 # 🖥️ Touch Kiosk App (Python + PySide6)
 
 This is a simple fullscreen touch kiosk application built with Python and PySide6. It is designed to run on one or two screens and automatically switches to a local video
- (like an ad or a cartoon) when there's no internet connection.
+ (like an ad or a cartoon) when there's no internet connection. 
+ 
+ Note: Name the video as fallback and should be in mp4 fortmat.
 
 
 
