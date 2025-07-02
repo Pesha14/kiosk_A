@@ -70,15 +70,15 @@ class KioskWindow(QMainWindow):
 
         # Setup reconnect timer (offline fallback)
         self.reconnect_timer = QTimer(self)
-        self.reconnect_timer.setInterval(30000)
+        self.reconnect_timer.setInterval(5000)
         self.reconnect_timer.timeout.connect(self.retry_online)
 
     def handle_load_result(self, ok: bool):
         if ok:
-            self.logger.info(f"✅ Page loaded: {self.url}")
+            self.logger.info(f"Page loaded: {self.url}")
             self.stop_video_fallback()
         else:
-            self.logger.warning("❌ Failed to load page — showing fallback video.")
+            self.logger.warning("Failed to load page — showing fallback video.")
             self.start_video_fallback()
 
     def start_video_fallback(self):
@@ -93,7 +93,7 @@ class KioskWindow(QMainWindow):
         self.reconnect_timer.stop()
 
     def retry_online(self):
-        self.logger.info("🔁 Retrying to connect...")
+        self.logger.info("Retrying to connect...")
         self.browser.load(QUrl(self.url))
 
     def go_back(self):
@@ -111,7 +111,7 @@ class KioskWindow(QMainWindow):
         
 
         if DEV_MODE and event.modifiers() == Qt.ControlModifier and event.key() == Qt.Key_X:
-            self.logger.warning("⚠️ Developer exit triggered with Ctrl+X")
+            self.logger.warning("Developer exit triggered with Ctrl+X")
             self.close()
 
         super().keyPressEvent(event)

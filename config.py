@@ -4,7 +4,7 @@ URLS = [
     "https://github.com/dashboard"                    # Screen 2
 ]
 
-DEV_MODE = True 
+DEV_MODE = False 
 
 KIOSK_OPTIONS = {
     "fullscreen": True,
