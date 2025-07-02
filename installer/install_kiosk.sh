@@ -1,10 +1,3 @@
-
-#cd ~/touch_kiosk/installer
-#chmod +x install_kiosk.sh
-
-# please udate based on the location of your folder
-
-
 echo "🧩 Updating system..."
 sudo apt update && sudo apt upgrade -y
 
@@ -15,7 +8,7 @@ pip3 install PySide6
 echo "📁 Copying Kiosk App to ~/touch_kiosk ..."
 mkdir -p ~/touch_kiosk
 
-# Copy only if not already in ~/touch_kiosk
+
 if [[ "$PWD" != "/home/pi/touch_kiosk" ]]; then
   cp -r ../* ~/touch_kiosk/
 fi

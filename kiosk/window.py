@@ -40,7 +40,6 @@ class KioskWindow(QMainWindow):
         top_bar.addWidget(self.back_button)
         top_bar.addStretch()
         self.main_layout.addLayout(top_bar)
-
         # Stacked layout for browser and fallback video
         self.stack_layout = QStackedLayout()
         self.main_layout.addLayout(self.stack_layout)
