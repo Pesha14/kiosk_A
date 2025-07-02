@@ -1,7 +1,7 @@
 # URLs to load on each screen
 URLS = [
-    "https://charming-valkyrie-c973ce.netlify.app/",  # Screen 1
-    "https://github.com/dashboard"                    # Screen 2
+    "https://www.w3schools.com/",  # Screen 1
+    "https://github.com/dashboard" # Screen 2
 ]
 
 DEV_MODE = False 
