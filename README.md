@@ -19,23 +19,6 @@ This is a simple fullscreen touch kiosk application built with Python and PySide
 - Runs on both Windows and Raspberry Pi 4 / 5
 
 
-## 📁 Folder Structure
-
-touch_kiosk/
-├── assets/
-│ └── fallback.mp4 # Local video for offline mode
-├── kiosk/
-│ └── window.py # Main window logic
-├── utils/
-│ └── logger.py # Logging utility
-├── installer/
-│ └── install_kiosk.sh # Installer script for Raspberry Pi
-├── config.py # Kiosk configuration (URLs, settings)
-├── main.py # App entry point
-├── README.md # This file
-
-
-
 ## ⚙️ How to Use
 
 ### 🧪 On Windows (for testing)
@@ -45,10 +28,8 @@ touch_kiosk/
 
 pip install PySide6
 Add your fallback video:
-
-Place your video at: assets/fallback.mp4
-Run the app:
-
+ ---- name the video as fallback
+ ---- and should be in mp4 format
 
 python main.py
 🍓 On Raspberry Pi 4 / 5
@@ -132,6 +113,7 @@ Set DEV_MODE = True in config.py
 
 Press Ctrl+X to exit the app safely (only in dev mode)
 
-👨‍💻 Author
+----👨‍💻 Author----
+
 Made with ❤️ by Pesha Enock
 Feel free to contribute or fork this project!
